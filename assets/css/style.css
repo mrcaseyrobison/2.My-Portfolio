@@ -1,0 +1,45 @@
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    background-image: url(images/paris.jpeg);
+    background-attachment:fixed;
+    background-color: #c5cbc0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: rgba(21, 19, 125, 0.853);
+    border-bottom: solid black 4px;
+}
+
+h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    font-size: 300%;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 600px;
+    padding: 15px;
+
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration:none;
+    opacity: 1;
+}
