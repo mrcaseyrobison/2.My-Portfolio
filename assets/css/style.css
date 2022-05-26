@@ -1,103 +1,151 @@
 * {
-    box-sizing:border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    display:flex;
-    flex-direction:column;
-    background-image: url(images/paris.jpeg);
-    background-attachment:fixed;
-    background-color: #c5cbc0;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/paris.jpeg);
+  background-attachment: fixed;
+  background-color: #c5cbc0;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    width: 100%;
-    background-color: rgba(21, 19, 125, 0.853);
-    border-bottom: solid black 4px;
-    z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  width: 100%;
+  background-color: rgba(59, 58, 60, 0.712);
+  border-bottom: solid black 4px;
+  z-index: 1;
 }
 
 h1 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #fff;
-    font-size: 300%;
-    padding: 10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #fff;
+  font-size: 300%;
+  padding: 10px;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 600px;
-    padding: 15px;
-
+  display: flex;
+  justify-content: space-between;
+  min-width: 800px;
+  padding: 15px;
 }
 
 nav a {
-    font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: slategray;
-    text-decoration:none;
-    font-weight:bold;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(253, 235, 254, 0.7);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-    color: white;
+  color: white;
 }
 
 aside {
-    display: flex;
-    float: left;
-    flex-wrap: wrap;
-    float: left;
-    flex: 1 1 0;
-    max-width: 60%;
-    margin-left: 5px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    background-color:rgba(255, 255, 255, 0.87);
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+  float: left;
+  flex: 1 1 0;
+  max-width: 60%;
+  margin-top: 125px;
+  margin-left: 3%;
+  background-color: rgba(255, 255, 255, 0.831);
+  border: solid black 3px;
 }
 
 h2 {
-    font-size: 36px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  font-size: 36px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 aside p {
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 1.5;
-    font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #headshot {
-    float: right;
-    max-width: 400px;
-    max-height: 400px;
-    border-radius: 50%;
-    border: solid rgb(225, 195, 200, 0.7) 30px;
-    outline: 3px solid black;
-    margin-top: 135px;
-    margin-right: 50px;
-
+  float: right;
+  max-width: 32%;
+  max-height: 32%;
+  margin-right: 40px;
+  border-radius: 50%;
+  border: solid rgb(225, 195, 200, 0.7) 30px;
+  outline: 3px solid black;
+  margin-top: 135px;
+  
 }
+
+div {
+    margin: 5%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat (6, 1fr);
+  grid-template-rows: repeat (6, 5vw);
+  grid-gap: 10px;
+ 
+}
+
+.grid img {
+  width: 638px;
+  height: 420px;
+  border: 3px solid black;
+}
+
+.one {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.two {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.three {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.four {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.five {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.six {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+
