@@ -1,16 +1,16 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  margin: auto;
   }
 
 body {
-  /* how do I make the background image opaque? */
+  /* how do I make the background image slightly opaque? */
   display: flex;
   flex-direction: column;
   background-image: url(images/paris.jpeg);
   background-attachment: fixed;
   background-color: #6feb0a38;
+  width: 100%;
 }
 
 /* Nav Bar Section Here */
@@ -58,20 +58,13 @@ nav a:hover {
 
 /* Headshot + About Me */ 
 
-section {
-  width: 100%;
-  margin-top: auto;
-}
-
 aside {
   display: flex;
   flex-wrap: wrap;
   float: right;
-  margin-right:5%;
-  flex: 1 1 0;
-  width: 55%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-right:177px;
+  width: 40%;
+  margin-top: 50px;
   background-color: rgba(255, 255, 255, 0.831);
   border: solid black 3px;
 }
@@ -95,13 +88,14 @@ aside p {
 }
 
 #headshot {
-  max-width: 500px;
+  max-width: 450px;
   min-width: 400px;
-  margin-left: 5%;
+  margin-left: 190px;
+  margin-right: 0px;
   border-radius: 50%;
   border: solid rgb(225, 195, 200, 0.7) 30px;
   outline: 3px solid black;
-  margin-top: 10px;
+  margin-top: 125px;
 }
 
 /* End Section */
@@ -112,11 +106,10 @@ aside p {
   display: block;
   border: 15px solid rgba(0, 0, 0, 0.295);
   max-width: 1082px;
-  margin-top: 10px;
   margin-left:auto;
   margin-right: auto;
   margin-bottom: 3px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 /* Grid Section with smaller photos */ 
@@ -127,7 +120,7 @@ aside p {
   grid-gap: 1px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 1px;
 }
 
 #portfolio img {
@@ -170,6 +163,7 @@ footer {
   justify-content:center;
   align-items: center;
   height: 100px;
+  width: 100%;
   background-color: rgba(59, 58, 60, 0.712);
   border-top: solid black 4px;
   list-style:none;
@@ -221,6 +215,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     padding: none;
+    margin-top: 40px;
   }
 
   #portfolio {
