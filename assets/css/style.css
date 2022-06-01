@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+  }
 
 body {
   /* how do I make the background image opaque? */
@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   background-image: url(images/paris.jpeg);
   background-attachment: fixed;
-  background-color: #c5cbc0;
+  background-color: #6feb0a38;
 }
 
 /* Nav Bar Section Here */
@@ -95,7 +95,8 @@ aside p {
 }
 
 #headshot {
-  width: 32%;
+  max-width: 500px;
+  min-width: 400px;
   margin-left: 5%;
   border-radius: 50%;
   border: solid rgb(225, 195, 200, 0.7) 30px;
@@ -110,11 +111,12 @@ aside p {
 #kyoto {
   display: block;
   border: 15px solid rgba(0, 0, 0, 0.295);
-  width: 75.7%;
+  max-width: 1082px;
   margin-top: 10px;
   margin-left:auto;
   margin-right: auto;
   margin-bottom: 3px;
+  margin-top: 70px;
 }
 
 /* Grid Section with smaller photos */ 
@@ -134,22 +136,23 @@ aside p {
   height: 360px;
 }
 
-.card {
+/* .card {
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 /* Insert HOVER styling here? How do I add black transparent hover effect with text? */ 
 
-.text {
+.card .text {
+  display: block;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
+} 
 
-.text {
+ .text {
   visibility: none; opacity: 0;
   transition: opacity 0.3s;
 }
@@ -258,7 +261,7 @@ footer {
 
   #headshot {
     display: block;
-    width: 80%;
+    width: 0%;
     margin-left: auto;
     margin-right: auto;
     padding: none;
@@ -307,7 +310,7 @@ footer {
 
   #headshot {
     display: block;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: none;
