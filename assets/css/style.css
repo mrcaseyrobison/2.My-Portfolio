@@ -107,8 +107,6 @@ img {
   margin-top: 20px;
   width: 1140px;
   padding: 30px;
-  
-
 }
 #projects {
   position: relative;
@@ -213,18 +211,85 @@ footer {
 
 /* Tablet */
 
-@media screen and (max-width: 992px) {}
-  
+@media screen and (max-width: 992px) {
+}
+
 /* Large smartphones */
 
-@media screen and (max-width: 768px) {}
- 
-/* Small smartphone */
-
-@media screen and (max-width:600px) {
-  
+@media screen and (max-width: 768px) {
   header {
     height: auto;
+    width: auto;
+  }
+
+  nav ul {
+    margin: 20px;
+    margin-left: -10px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin: auto;
+  }
+
+  #headshot {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  #about-me h2 {
+    font-size: 25px;
+  }
+
+  #my-projects {
+    font-size: 45px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  #projects img {
+    height: 70%;
+    width: 100%;
+  }
+
+  #projects div {
+    font-size: 140px;
+  }
+  #projects:hover div {
+    width: 100%;
+    height: 100%;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .images:hover div {
+    width: 560px;
+    height: 400px;
+    margin-right: 17px;
+  }
+}
+
+/* Small smartphone */
+
+@media screen and (max-width: 600px) {
+  header {
+    height: auto;
+    width: 100%;
   }
 
   nav ul {
@@ -261,8 +326,8 @@ footer {
   }
 
   #projects img {
-   width: 560px;
-   height: 400px;
+    width: 560px;
+    height: 400px;
   }
 
   #projects div {
@@ -271,7 +336,75 @@ footer {
   #projects:hover div {
     width: 560px;
     height: 400px;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .images {
+    width: 100%;
+  }
+
+  .images:hover div {
+    width: 560px;
+    height: 400px;
+    margin-right: 17px;
+  }
+}
+
+/* Iphone 13 PRO MAX */
+
+@media screen and (max-width: 428px) {
+  header {
+    height: auto;
+    width: 100%;
+  }
+
+  nav ul {
+    margin: 20px;
+    margin-left: -10px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 67px;
+  }
+
+  #headshot {
+    margin: 15px;
+    width: 150px;
+    height: 150px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  #about-me h2 {
+    font-size: 25px;
+  }
+
+  #my-projects {
+    font-size: 45px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  #projects img {
+    width: 560px;
+    height: 400px;
+  }
+
+  #projects div {
+    font-size: 140px;
+  }
+  #projects:hover div {
+    width: 560px;
+    height: 400px;
   }
   .grid {
     display: flex;
