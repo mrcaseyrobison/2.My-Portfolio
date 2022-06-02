@@ -1,7 +1,11 @@
+:root {
+  --dark: rgba(59, 58, 60, 0.857);
+}
+
 * {
   box-sizing: border-box;
   margin: auto;
-  }
+}
 
 body {
   /* how do I make the background image slightly opaque? */
@@ -9,11 +13,8 @@ body {
   flex-direction: column;
   background-image: url(images/paris.jpeg);
   background-attachment: fixed;
-  background-color: #6feb0a38;
-  width: 100%;
+  background-color: #fbfcfb38;
 }
-
-/* Nav Bar Section Here */
 
 header {
   display: flex;
@@ -22,15 +23,15 @@ header {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  height: 100px;
-  background-color: rgba(59, 58, 60, 0.712);
+  height: 220px;
+  background-color: var(--dark);
   border-bottom: solid black 4px;
 }
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #fff;
-  font-size: 300%;
+  font-size: 400%;
 }
 
 nav ul {
@@ -43,7 +44,7 @@ nav ul li {
 }
 
 nav a {
-  font-size: 20px;
+  font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(253, 235, 254, 0.7);
   text-decoration: none;
@@ -54,22 +55,25 @@ nav a:hover {
   color: white;
 }
 
-/* End Nav Bar */
-
-/* Headshot + About Me */ 
-
-aside {
+main {
   display: flex;
-  flex-wrap: wrap;
-  float: right;
-  margin-right:177px;
-  width: 40%;
-  margin-top: 50px;
-  background-color: rgba(255, 255, 255, 0.831);
-  border: solid black 3px;
 }
 
-h2 {
+#headshot {
+  border-radius: 50%;
+  border: solid rgb(225, 195, 200, 0.7) 10px;
+}
+
+#about-me {
+  display: block;
+  width: auto;
+  width: 1140px;
+  background-color: rgba(255, 255, 255, 0.929);
+  border: solid black 3px;
+  margin-top: 20px;
+}
+
+#about-me h2 {
   font-size: 36px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -78,7 +82,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-aside p {
+#about-me p {
   font-size: 16px;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -87,72 +91,74 @@ aside p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#headshot {
-  max-width: 450px;
-  min-width: 400px;
-  margin-left: 190px;
-  margin-right: 0px;
-  border-radius: 50%;
-  border: solid rgb(225, 195, 200, 0.7) 30px;
-  outline: 3px solid black;
-  margin-top: 125px;
+img {
+  border: 3px solid black;
 }
 
-/* End Section */
-
-/* Main Portfolio Picture */
-
-#kyoto {
-  display: block;
-  border: 15px solid rgba(0, 0, 0, 0.295);
-  max-width: 1082px;
-  margin-left:auto;
-  margin-right: auto;
-  margin-bottom: 3px;
-  margin-top: 50px;
+#projects {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-/* Grid Section with smaller photos */ 
+#projects div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: rgb(255, 217, 0);
+  font-family: impact;
+  font-size: 300px;
+  opacity: 0.5;
+  visibility: hidden;
+}
 
-#portfolio {
+#projects:hover {
+  cursor: pointer;
+}
+
+#projects:hover div {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.grid {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1px;
+  grid-gap: 20px;
+  margin-bottom: 20px;
 }
 
-#portfolio img {
-  border: 15px solid rgba(0, 0, 0, 0.295);
-  width: 540px;
-  height: 360px;
-}
-
-/* .card {
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-/* Insert HOVER styling here? How do I add black transparent hover effect with text? */ 
-
-.card .text {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  text-align: center;
-  font-size: 50px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-} 
-
- .text {
-  visibility: none; opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.card:hover .text {
+.images {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  visibility: visible; opacity: 1;
+}
+
+.images div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: rgb(255, 217, 0);
+  font-family: impact;
+  font-size: 100px;
+  opacity: 0.5;
+  visibility: hidden;
+}
+
+.images:hover {
+  cursor: pointer;
+}
+
+.images:hover div {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 0.7;
 }
 
 /* Begin footer nav */
@@ -160,13 +166,13 @@ aside p {
 footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   height: 100px;
   width: 100%;
-  background-color: rgba(59, 58, 60, 0.712);
+  background-color: var(--dark);
   border-top: solid black 4px;
-  list-style:none;
+  list-style: none;
 }
 
 #contact a {
@@ -186,145 +192,8 @@ footer {
   margin-right: 1rem;
 }
 
-/* End footer nav */
-
 /*--Media Query Section--*/
 
 /* Tablet */
 
-@media screen and (max-width: 992px) {
-  #contact a {
-    font-size: 80%;
-  }
-
-  #header {
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  aside {
-    float: none;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #headshot {
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: none;
-    margin-top: 40px;
-  }
-
-  #portfolio {
-    grid-template-columns: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #portfolio img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .card {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* Large smartphones */
-
-@media screen and (max-width: 768px) {
-  #contact a {
-    font-size: 80%;
-  }
-
-  #header {
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  aside {
-    float: none;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #headshot {
-    display: block;
-    width: 0%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: none;
-  }
-
-  #kyoto {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-  #portfolio {
-    grid-template-columns: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #portfolio img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .card {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 /* Small smartphone */
-
-@media screen and (max-width:576px) {
-  #contact a {
-    font-size: 80%;
-  }
-
-  #header {
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  aside {
-    float: none;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #headshot {
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: none;
-  }
-
-  #portfolio {
-    grid-template-columns: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #portfolio img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .card {
-    width: 100%;
-    height: 100%;
-  }
-}
-

@@ -1,90 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>Casey Robison -- Portfolio</title>
-      <meta charset="UTF-8" />
-      <meta name="viewport content="width=device-width, initial-scale="1.0" />
-      <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
-      <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
-    </head>
-<body>
+
+<head>
+  <title>Casey Robison -- Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport content=" width="device-width," initial-scale="1.0" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+<html>
 
   <!--Nav Bar-->
-    
-    <header>
-      <h1 id="me">Casey Robison</h1>
-        <nav>
-          <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#kyoto">My Portfolio</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-          </ul>
-        </nav>
-    </header>
 
-    <!--Headshot floats left / About Me floats right-->
-    
-    <main>
-      <section>
-        <img id="headshot" src="./assets/images/headshot.jpeg">
-        <aside>
-          <h2 id="about">About Me:</h2>
-            <p>Born and raised in Seattle WA, I have spent the majority of my career in the liquor and hospitality business. From 2008 - 2018 I was the beverage director for Heavy Restaraunt Group where I designed, coordinated, and opened numerous bar programs for new concepts around Seattle and on the Eastside. Mentoring younger bartenders has always been a passion of mine and my experience with Heavy allowed me to pursue that passion.</p>
-            <p>In 2018 I left Heavy to pursue a role in spirits marketing with Pernod Ricard, where I was a Key Account Manager for their New Brand Ventures portfolio in the Seattle area. It was a great experience that was unfortunately cut short by a global pandemic.</p>
-           <p>While working at Pernod Ricard I also went back to school. I got my Associate of Arts degree from Seattle Central and in 2020 matriculated to the University of Washington where I pursued a degree in History. I completed my degree in 2022. I am forever grateful for my experience at the UW.</p>           
-            <p>As an avid traveler and amatuer photographer, I am using this space to showcase just a handful of photos from my travels. These photos are placeholders for forthcoming web projects.</p>
-          </aside>
-      </section>
-    </main>
-
-    <!--Big photo here - Placeholder Images from here on out-->
-    
-    <figure class="card">
-      <img id ="kyoto"src="./assets/images/kyoto.jpeg">
-      <div class=text>JAPAN</div>
-    </figure>
-    
-    <!--Playing with GRID here-->
-
-    <div id="portfolio">
-          <figure class="card">
-            <img src="./assets/images/dubrovnik.jpeg">
-            <div class=text>CROATIA</div>
-          </figure>
-          <figure class="card">
-            <img src="./assets/images/namibia.jpeg">
-            <div class=text>NAMIBIA</div>           
-          </figure>
-          <figure class="card">
-            <img src="./assets/images/chiangmai.jpg">
-            <div class=text>THAILAND</div>           
-          </figure>
-          <figure class="card">
-            <img src="./assets/images/faroes.jpg">
-            <div class=text>FAROE ISLANDS</div>           
-          </figure>
-          <figure class="card">
-            <img src="./assets/images/palmsprings.jpg">
-            <div class=text>PALM SPRINGS</div>        
-          </figure>
-          <figure class="card">
-            <img src="./assets/images/antotolicoelalto.jpg">
-            <div class=text>MEXICO</div>        
-          </figure>
+  <header>
+    <div>
+      <img id="headshot" src="./assets/images/headshot.jpeg" height="200px" width="200px" />
     </div>
-   
-    <!--Footer here-->
+    <h1 id="me">Casey Robison</h1>
+    <nav>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">My Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <footer>
-      <nav id="contact">
-        <li><a href="mailto:mrcaseyrobison@gmail.com" target="blank">Email</a></li>
-        <li><a href="https://github.com/mrcaseyrobison" target="blank">My GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/casey-robison-4664b642/" target="blank">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/caseyrobis0n/" target="blank">Instagram</a></li>
-        <li><a href="https://twitter.com/CaseyRobison" target="blank">Twitter</a></li>
-      </nav>
-    </footer>  
+  <main>  
+    <section id="about-me">
+      <h2 id="title">About Me:</h2>
+      <p>
+        Born and raised in Seattle WA, I have spent the majority of my career in
+        the liquor and hospitality business. From 2008 - 2018 I was the beverage
+        director for Heavy Restaraunt Group where I designed, coordinated, and
+        opened numerous bar programs for new concepts around Seattle and on the
+        Eastside. Mentoring younger bartenders has always been a passion of mine
+        and my experience with Heavy allowed me to pursue that passion.
+      </p>
+      <p>
+        In 2018 I left Heavy to pursue a role in spirits marketing with Pernod
+        Ricard, where I was a Key Account Manager for their New Brand Ventures
+        portfolio in the Seattle area. It was a great experience that was
+        unfortunately cut short by a global pandemic.
+      </p>
+      <p>
+        While working at Pernod Ricard I also went back to school. I got my
+        Associate of Arts degree from Seattle Central and in 2020 matriculated
+        to the University of Washington where I pursued a degree in History. I
+        completed my degree in 2022. I am forever grateful for my experience at
+        the UW.
+      </p>
+      <p>
+        As an avid traveler and amatuer photographer, I am using this space to
+        showcase just a handful of photos from my travels. These photos are
+        placeholders for forthcoming web projects.
+      </p>
+    </section>
+  </main>
 
+  <!--Portfolio Begins Here-->
+
+  <!--Main Image-->
+
+  <figure id="projects">
+    <img src="./assets/images/palmsprings.jpg" height="800px" width="1140px" />
+    <div>PALM SPRINGS</div>
+  </figure>
+
+  <!--Supporting Images-->
+
+<figure class="grid">
+  <figure class="images">
+    <img src="./assets/images/dubrovnik.jpeg" height="400px" width="560px" />
+    <div class="text">CROATIA</div>
+  </figure>
+  <figure class="images">
+    <img src="./assets/images/namibia.jpeg" height="400px" width="560px" />
+    <div class="text">NAMIBIA</div>
+  </figure>
+  <figure class="images">
+    <img src="./assets/images/chiangmai.jpg" height="400px" width="560px" />
+    <div class="text">THAILAND</div>
+  </figure>
+  <figure class="images">
+    <img src="./assets/images/faroes.jpg" height="400px" width="560px" />
+    <div class="text">FAROE ISLANDS</div>
+  </figure>
+  <figure class="images">
+    <img src="./assets/images/kyoto.jpeg" height="400px" width="560px" />
+    <div class="text">JAPAN</div>
+  </figure>
+  <figure class="images">
+    <img src="./assets/images/antotolicoelalto.jpg" height="400px" width="560px" />
+    <div class="text">MEXICO</div>
+  </figure>
+</figure>
+  
+  <!--Footer here-->
+
+  <footer>
+    <nav id="contact">
+      <li>
+        <a href="mailto:mrcaseyrobison@gmail.com" target="blank">Email</a>
+      </li>
+      <li>
+        <a href="https://github.com/mrcaseyrobison" target="blank">My GitHub</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/casey-robison-4664b642/" target="blank">LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/caseyrobis0n/" target="blank">Instagram</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/CaseyRobison" target="blank">Twitter</a>
+      </li>
+    </nav>
+  </footer>
   </body>
 
-      
+</html>
