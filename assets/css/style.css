@@ -32,6 +32,7 @@ h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #fff;
   font-size: 400%;
+  padding-right: 11px;
 }
 
 nav ul {
@@ -123,6 +124,7 @@ img {
   color: rgb(255, 217, 0);
   font-family: impact;
   font-size: 300px;
+  padding-left: 5px;
   opacity: 0.5;
   visibility: hidden;
 }
@@ -159,6 +161,7 @@ img {
   background: black;
   color: rgb(255, 217, 0);
   font-family: impact;
+  padding-left: 5px;
   font-size: 140px;
   opacity: 0.5;
   visibility: hidden;
