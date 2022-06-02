@@ -71,6 +71,7 @@ main {
   background-color: rgba(255, 255, 255, 0.929);
   border: solid black 3px;
   margin-top: 20px;
+  padding: 50px;
 }
 
 #about-me h2 {
@@ -95,6 +96,19 @@ img {
   border: 3px solid black;
 }
 
+#my-projects {
+  display: flex;
+  font-size: 100px;
+  justify-content: center;
+  color: rgb(252, 250, 250);
+  border: solid black 3px;
+  background-color: var(--dark);
+  margin-top: 20px;
+  width: 1140px;
+  padding: 30px;
+  
+
+}
 #projects {
   position: relative;
   margin-top: 20px;
@@ -145,7 +159,7 @@ img {
   background: black;
   color: rgb(255, 217, 0);
   font-family: impact;
-  font-size: 100px;
+  font-size: 140px;
   opacity: 0.5;
   visibility: hidden;
 }
@@ -196,4 +210,78 @@ footer {
 
 /* Tablet */
 
+@media screen and (max-width: 992px) {}
+  
+/* Large smartphones */
+
+@media screen and (max-width: 768px) {}
+ 
 /* Small smartphone */
+
+@media screen and (max-width:600px) {
+  
+  header {
+    height: auto;
+  }
+
+  nav ul {
+    margin: 20px;
+    margin-left: -10px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 67px;
+  }
+
+  #headshot {
+    margin: 15px;
+    width: 150px;
+    height: 150px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  #about-me h2 {
+    font-size: 25px;
+  }
+
+  #my-projects {
+    font-size: 45px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  #projects img {
+   width: 560px;
+   height: 400px;
+  }
+
+  #projects div {
+    font-size: 140px;
+  }
+  #projects:hover div {
+    width: 560px;
+    height: 400px;
+
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .images:hover div {
+    width: 560px;
+    height: 400px;
+    margin-right: 17px;
+  }
+}
