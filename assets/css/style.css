@@ -558,7 +558,7 @@ footer {
 
   #projects img {
     width: 100%;
-    height: 500px;
+    height: 600px;
   }
 
   #projects div {
@@ -566,7 +566,7 @@ footer {
   }
   #projects:hover div {
     width: 100%;
-    height: 380px;
+    height: 600px;
   }
   .grid {
     display: flex;
@@ -575,7 +575,7 @@ footer {
 
   .photo {
     width: 100%;
-    height: 500px;
+    height: 600px;
   }
 
   .images div {
