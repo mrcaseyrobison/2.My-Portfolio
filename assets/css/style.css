@@ -105,6 +105,7 @@ img {
   display: flex;
   font-size: 80px;
   justify-content: center;
+  align-items: center;
   color: rgb(255, 255, 255);
   border: solid black 1px;
   background-color: var(--dark);
@@ -243,14 +244,12 @@ footer {
   }
 
   #about-me h2 {
-    font-size: 50px;
+    font-size: 100px;
   }
 
   #my-projects {
-    font-size: 50px;
     width: 100%;
     height: 150px;
-    padding-top: 45px;
   }
 
   #projects img {
@@ -324,10 +323,8 @@ footer {
   }
 
   #my-projects {
-    font-size: 50px;
     width: 100%;
     height: 150px;
-    padding-top: 45px;
   }
 
   #projects img {
@@ -401,10 +398,8 @@ footer {
   }
 
   #my-projects {
-    font-size: 50px;
     width: 100%;
     height: 150px;
-    padding-top: 45px;
   }
 
   #projects img {
@@ -479,9 +474,7 @@ footer {
   }
 
   #my-projects {
-    font-size: 45px;
     width: 100%;
-    padding: 15px;
   }
 
   #projects img {
@@ -508,6 +501,86 @@ footer {
 
   .images div {
     font-size: 100px;
+  }
+
+  .images:hover div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact a {
+    font-size: 11px;
+  }
+}
+
+/* Iphone Pro Max 13 - 2778x1284 pixels at 458ppi */
+
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+  header {
+    height: auto;
+    width: auto;
+  }
+
+  nav ul {
+    margin: 20px;
+    margin-left: -10px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 67px;
+  }
+
+  #headshot {
+    margin: 15px;
+    width: 150px;
+    height: 150px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  #about-me h2 {
+    font-size: 25px;
+  }
+
+  #my-projects {
+    width: 100%;
+  }
+
+  #projects img {
+    width: 100%;
+    height: 380px;
+  }
+
+  #projects div {
+    font-size: 100px;
+  }
+  #projects:hover div {
+    width: 100%;
+    height: 380px;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo {
+    width: 506px;
+    height: 380px;
+  }
+
+  .images div {
+    font-size: 100px;
+    font-family:'Courier New', Courier, monospace
   }
 
   .images:hover div {
