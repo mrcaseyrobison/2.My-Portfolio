@@ -558,7 +558,7 @@ footer {
 
   #projects img {
     width: 100%;
-    height: 380px;
+    height: 500px;
   }
 
   #projects div {
@@ -574,8 +574,8 @@ footer {
   }
 
   .photo {
-    width: 506px;
-    height: 380px;
+    width: 100%;
+    height: 500px;
   }
 
   .images div {
