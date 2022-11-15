@@ -103,7 +103,7 @@ img {
 
 #my-projects {
   display: flex;
-  font-size: 80px;
+  font-size: 70px;
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
@@ -140,7 +140,7 @@ img {
   height: 99.6%;
   margin-bottom: 3px;
   visibility: visible;
-  font-size: 15rem;
+  font-size: 14rem;
 }
 
 .grid {
